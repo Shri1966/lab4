@@ -1,19 +1,18 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-float cube(float a)
-{
-float c;
-c=a*a*a;
-return (c);
+
+int cube (int a)
+{int cub=a*a*a;
+return cub;
 }
 
-int main ()
-{
-float a,c;
-cout<<"enter any integer";
-cin>>a;
-c=cube(a);
-cout<<"cube of integer"<<c;
-return 0;
+int main() 
+{ cout<<"program to find cube of any number";
+int numb;
+cout<<"enter a number" ;
+cin>>numb;
+int cube1=cube(numb);
+cout<<"the cube of number is"<<cube1;
+	
+	return 0;
 }
