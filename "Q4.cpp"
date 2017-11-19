@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int even_odd (int num)
+{ if(num%2==0)
+return 0;
+else 
+return 1;
+}
+int main()
+{int x=0;
+cout<<"find the number is even or odd";
+cout<<"\n \nenter the number:";
+cin>>x;
+int n=even_odd(x);
+if (n==0)
+cout<<"\n \nnumber is even:";
+else
+cout<<"\n \nnumber is odd:";
+return 0;
+}
