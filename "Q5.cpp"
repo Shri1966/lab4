@@ -54,9 +54,9 @@ int main()
   int numb1;
   cout<<"\nProgram to check whether a number is Prime number, Armstrong or Perfect.";
   cout<<"\nENTER THE NUMBER: ";
-  cin>>num1;
-  Prime(num1);
-  Perfect(num1);
+  cin>>numb1;
+  Prime(numb1);
+  Perfect(numb1);
   Armstrong(numb1);
   return 0;
 }
