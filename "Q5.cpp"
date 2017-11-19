@@ -1,0 +1,62 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+//To check Prime number or not
+int Prime(int numb)
+{
+  int count=0;
+  for(int i=2;i<numb;i++)
+  {
+   if(numb%i==0)
+   count++;
+  }
+  if(count==0)
+    cout<<"\n \n"<<numb<<" is a prime number.\n";
+  else
+    cout<<"\n \n"<<numb<<" is not a prime number. \n";
+  return 0;
+}
+//To check Armstrong
+int Armstrong(int numb)
+{
+  int numb1, rem, sum = 0,dig;
+  numb1 = numb;
+  while(numb1 != 0)
+  {
+      dig = numb1 % 10;
+      sum += pow(dig,3);
+      numb1 /= 10;
+  }
+
+  if(sum == numb)
+    cout <<numb<< " is an Armstrong number.\n";
+  else
+  cout <<numb<< " is not an Armstrong number.\n";
+ return 0;
+}
+//To check whether a number is Perfect number or not.
+int Perfect(int numb)
+{int i=1,sum=0;
+  while(i<numb)
+  {
+    if(numb%i==0)
+      sum=sum+i;
+    i++;
+  }
+  if(sum==numb)
+         cout << numb  <<  " is a perfect number\n";
+  else
+         cout << numb << " is not a perfect number \n";
+  return 0;
+}
+int main()
+{
+  int numb1;
+  cout<<"\nProgram to check whether a number is Prime number, Armstrong or Perfect.";
+  cout<<"\nENTER THE NUMBER: ";
+  cin>>num1;
+  Prime(num1);
+  Perfect(num1);
+  Armstrong(numb1);
+  return 0;
+}
