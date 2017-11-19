@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int max (int a , int b)
+{if(a!=b)
+{int mx=a>b?a:b;
+return mx;
+}
+else 
+return 0;
+}
+
+int main() 
+{ 
+int a1, b1;
+cout<<"find maximum between two numbers";
+cout<<"\n \nenter two number:";
+cin>>a1>>b1;
+int maximum=max(a1, b1);
+if(maximum>0)
+cout<<"maximum of two number is"<<maximum;
+else
+cout<<"both are equal";
+	
+	return 0;
+}
